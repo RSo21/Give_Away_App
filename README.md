@@ -48,4 +48,4 @@ To run this project, install it locally using npm:
 
 ### Demo
 
-Try this working demo: [Give Away App](https://rso21.github.io/Give-Away-App/)
+Try this working demo: [Give Away App](https://rso21.github.io/Give_Away_App/)
