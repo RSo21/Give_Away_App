@@ -1,0 +1,93 @@
+.give-away-container{
+    display: flex;
+    .give-away-photo{
+        background: url(./../../assets/Form-Hero-Image.jpg);
+        background-repeat: no-repeat;
+        //background-size: 160%;
+        background-size: cover;
+        background-position-x: right;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .give-away-content{
+        width: 50vw;
+        height: 100vh;
+        
+        
+
+        .give-away-content-text{
+            width: 50vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 2.5em;
+                padding-right: 2em;
+            }
+            p{
+                font-size: 2em;
+                padding: 1em 0em 2em 0; 
+                padding-right: 2em;
+
+            }
+            .decoration{
+                padding-right: 2em;
+            }
+
+            .give-away-squares{
+                display: flex;
+                flex-direction: row;
+                padding-right: 3em;
+
+                .square{
+                    border: 0.09em solid $font-color-primary;
+                    transform: rotate(45deg);
+                    width: 8em;
+                    height: 8em;
+                    margin: 0.8em;
+
+                    p{
+                        align-items: center;
+                        vertical-align: middle;
+                        font-size: 1.5em;
+                        transform: rotate(-45deg);
+                        padding: 1em 1em 0;
+
+                        &:last-of-type{
+                            padding-left: 2em;
+                            font-size: 1em;
+                        }
+                    }
+
+                }
+                
+            }
+
+
+        }
+    }
+}
+
+.header-important{
+    background-color: $btn-account-border-color;
+    height: 15vh;
+
+    .header-important-title{
+        font-size: 2em;
+        font-weight: 600;
+        padding: 1em 0 0.7em 2em;
+    }
+    .header-important-text{
+        font-size: 1em;
+        padding-left: 4em;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

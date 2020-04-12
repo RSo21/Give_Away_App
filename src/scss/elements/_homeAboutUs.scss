@@ -1,0 +1,39 @@
+.about-us{
+    display: flex;
+    flex-direction: row;
+    color: $font-color-primary;
+
+    .about-us-text{
+        background-color: $bg-color-secondary;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #about{
+            font-size: 3em;
+            padding-bottom: 0.6em;
+        }
+
+        .about-us-text-two{
+            font-size: 1.5em;
+            text-align: center;
+            padding: 2em 7em 2em;
+            line-height: 2em;
+        }
+        .signature{
+            padding-left: 20vw;
+        }
+    }
+    .about-us-photo{
+        width: 50vw;
+        height: 100vh;
+        background-size: 100%;
+        background: url(./../../assets/Hands.jpg);
+        background-size: cover;
+        background-position-x: center;
+
+    }
+}

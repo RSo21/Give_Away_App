@@ -1,0 +1,30 @@
+.donate-things{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    
+    .donate-things-btn{
+        background-color: transparent;
+        padding: 1em 2.5em;
+        font-size: 2em;
+        color: $font-color-primary;
+        border: 0.05em solid $font-color-primary;
+        font-weight: 300;
+
+        a{
+            text-decoration: none;
+            color: $font-color-primary;
+
+            a:hover{
+                color: $font-color-secondary;
+            }
+        }
+        
+            &:hover{
+                color: $font-color-secondary;
+                border: 0.05em solid $font-color-secondary;
+            }
+    }
+
+}

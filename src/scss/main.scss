@@ -1,0 +1,22 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+@import "generic/reset";
+@import "settings/mobile";
+
+//components
+@import "elements/homeHeader";
+@import "elements/homeThreeColumns";
+@import "elements/logElements";
+@import "elements/navigation";
+@import "elements/homeEasySteps";
+@import "elements/homeFourColumns";
+@import "elements/homeDonateThings";
+@import "elements/homeAboutUs";
+@import "elements/homeWhomWeHelp";
+@import "elements/homeFooter.scss";
+@import "elements/login";
+@import "elements/register";
+@import "elements/logOut";
+@import "elements/giveAwayHeader";
+@import "elements/giveAwayForm";

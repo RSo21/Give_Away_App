@@ -1,0 +1,94 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+
+    .register-text{
+        padding-bottom: 1em;
+
+        p{
+            font-size: 3em;
+            text-align: center;
+            padding-bottom: 0.7em;
+        }
+
+        .register-success{
+            font-size: 1.1em;
+            color: #57B850;
+            padding-top: 1em;
+
+        }
+    }
+
+    .register-form-input{
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-color-secondary;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 25vw;
+        padding-bottom: 2em;
+
+        .register-form-input-label,
+        .register-form-input-label-2{
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1em;
+
+
+            input{
+                border: none;
+                border-bottom: 0.1em solid $line-color;
+                width: 15vw;
+                background: transparent;
+                padding-top: 1em;
+
+                &:focus {
+                    border-bottom: 0.1em solid $btn-account-border-color;
+                    background: transparent;
+                  }
+            }
+
+            .register-error{
+                padding-top: 0.5em;
+                font-size: 0.8em;
+                color: red;
+            }
+            
+        }
+    }
+
+    .register-form-btn{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2em;
+        color: $font-color-primary;
+
+        button{
+            padding: 1.2em 2em;
+            border: none;
+            background-color: transparent;
+            font-size: 1.3em;
+            color: $font-color-primary;
+
+            a{
+                text-decoration: none;
+                color: $font-color-primary;
+            }
+
+            &:hover{
+                color: $font-color-secondary;
+            }
+
+            &:hover{
+                padding: 1em 2em;
+                color: $font-color-secondary;
+                border: 0.1em solid $font-color-secondary;
+            }
+        }
+    }
+}

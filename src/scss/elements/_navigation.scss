@@ -1,0 +1,24 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4em;
+    margin-top: 2em;
+
+    @include mobile{
+        display: none;
+    }
+
+    a{
+        font-size: 1.2em;
+        color: $font-color-primary;
+        text-decoration: none;
+        padding: 0.6em;
+
+        &:hover{
+            color: $font-color-secondary;
+            border: 0.1em solid $font-color-primary;
+            padding: 0.5em;
+        }
+    }
+}

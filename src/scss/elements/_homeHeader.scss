@@ -1,0 +1,85 @@
+.header-container{
+    display: flex;
+    .header-photo{
+        background: url(./../../assets/Home-Hero-Image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        width: 48vw;
+        height: 100vh;
+    }
+
+    .header-content{
+        width: 50vw;
+        height: 100vh;
+        
+
+        .header-content-text{
+            width: 52vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 2.5em;
+                //padding-right: 2em;
+            }
+            p{
+                font-size: 2em;
+                padding: 1em 0em 1em 0; 
+
+            }
+
+            .header-content-btn{
+                padding-top: 2em;
+                .header-content-btn-left{
+                    background-color: transparent;
+                    padding: 1em 2.5em;
+                    font-size: 1.5em;
+                    margin-right: 1em;
+                    color: $font-color-primary;
+                    border: 0.1em solid $font-color-primary;
+
+                    a{
+                        text-decoration: none;
+                        color: $font-color-primary;
+
+                        a:hover{
+                            color: $font-color-secondary;
+                        }
+                    }
+
+                    &:hover{
+                        color: $font-color-secondary;
+                        border: 0.1em solid $font-color-secondary;
+                    }
+                }
+                .header-content-btn-right{
+                    background-color: transparent;
+                    padding: 1em 1.2em;
+                    font-size: 1.5em;
+                    color: $font-color-primary;
+                    border: 0.1em solid $font-color-primary;
+
+                    a{
+                        text-decoration: none;
+                        color: $font-color-primary;
+
+                        a:hover{
+                            color: $font-color-secondary;
+                        }
+                    }
+
+                    &:hover{
+                        color: $font-color-secondary;
+                        border: 0.1em solid $font-color-secondary;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

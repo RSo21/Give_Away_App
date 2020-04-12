@@ -1,0 +1,70 @@
+.whom-we-helps{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .whom-we-helps-text{
+        text-align: center;
+        
+        #help{
+            font-size: 4em;
+            font-weight: 400;
+            padding-bottom: 1em;
+        }
+
+    }
+
+    .whom-we-help-btn{
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        button{
+            margin-right: 2em;
+        }
+    }
+
+    .whom-we-helps-desc{
+        padding: 2em 20em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .whom-we-help-choice{
+        width: 70vw;
+        .whom-we-help-choice-div{
+            font-size: 1.2em;
+            padding: 1em;
+            border-bottom: 0.08em solid black;
+
+            .whom-help-choice-name-and-donation{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                span{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .pagesNumbers{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        cursor: pointer;
+        padding-top: 2em;
+
+        li{
+            padding: 1em;
+
+            
+        }
+        .active{
+            border: 0.02em solid black;
+        }
+    }
+    
+}

@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import LogOut from './pages/LogOut';
+import GiveAway from './pages/GiveAway';
+import "../src/scss/main.scss";
+
+import PrivateRoute from './components/Session/index';
+import { AuthProvider } from "./components/Session/Context";
+
+
+class App extends Component {
+
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="App">
+        <BrowserRouter>
+        <AuthProvider>
+          <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/register" component={Register}/>
+              <Route exact path="/logout" component={LogOut}/>
+              <PrivateRoute path='/giveaway' component={GiveAway}/>
+          </Switch>
+        </AuthProvider>
+        </BrowserRouter> 
+      </div>
+    );
+  }
 }
 
 export default App;

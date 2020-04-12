@@ -1,0 +1,92 @@
+.give-away-form-container{
+    width: 100vw;
+    height: 70vh;
+    background-image: url(./../../assets/Background-Form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    .step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0 2em 3em;
+
+        p{
+            font-size: 1.4em;
+            text-align: left;
+        }
+
+
+        .step1{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .step2{
+            display: flex;
+            flex-direction: column;
+
+            .step2-form{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .step3{
+            .step3-form{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .step4{
+            display: flex;
+            flex-direction: column;
+            .step4-form{
+                display: flex;
+                flex-direction: row;
+
+                .adress,
+                .date{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+        }
+
+        .step6{
+            padding-left: 10em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-size: 2em;
+                font-weight: 200;
+                padding: 0.5em 0;
+            }
+        }
+    }
+    .steps-buttons{
+        padding-top: 2em;
+
+        button{
+            &:first-of-type{
+                margin-right: 2em;
+            }
+        }
+
+        
+    }
+
+}
+
+
+
+
+// input[type='text'] 

@@ -1,0 +1,93 @@
+.log-elements{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 3em;
+    padding-right: 6em;
+
+    .log-el-btn-first{
+        background-color: $bg-color-primary;
+        border: none;
+        padding-right: 2em;
+        
+        a{
+            text-decoration: none;
+            color: $font-color-primary;
+            font-size: 1em;
+            
+            &:hover{
+                color: $font-color-secondary; 
+            }
+        }
+        
+    }
+    .log-el-btn-second{
+        background-color: $bg-color-primary;
+        border: 0.1em solid $btn-account-border-color;
+        padding: 0.5em 1em;
+
+        a{
+            text-decoration: none;
+            color: $font-color-primary;
+            
+            
+            &:hover{
+                color: $font-color-secondary; 
+            }
+        }
+    }
+
+}
+
+//mobile
+
+.page-header-mobile{
+    background-color: $bg-color-secondary;
+    height: 4vh;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: flex-end;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+        .icon-menu{
+            padding-right: 0.5em;
+            padding-bottom: 0.3em;
+            width: 1em;
+            height: 1em;
+        }
+    
+    .menu-mobile{
+        background: $bg-color-secondary;
+        opacity: 0.9;
+
+        p{
+        text-align: left;
+        padding: 2em 0 0 1.4em;
+        opacity: 1;
+        font-weight: 800;
+
+            a{
+                color: $font-color-primary;
+                font-size: 1em;
+                font-weight: 800;
+                text-decoration: none;
+
+                &:hover{
+                    color: $nav-hover-color;
+                }
+            }
+
+            .nav-register{
+                padding: 0.4em 1em;
+                border: 0.2em solid $nav-hover-color;
+            }
+        }
+
+    
+    }
+
+}

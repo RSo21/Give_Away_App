@@ -1,0 +1,152 @@
+.footer-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    &::before{
+        background-image: url(./../../assets/Background-Contact-Form.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom:0;
+        left: 0;
+        content: "";
+        z-index: 0;
+        display: block
+        }
+   
+    .footer-contact{
+        height: 95vh;
+        padding-left: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 2;
+        position: relative;
+
+        .footer-text{
+            text-align: center;
+            padding-left: 7em;
+            p{
+                font-size: 3em;
+                padding-bottom:1em;
+            }
+        }
+    }
+
+    .footer-contact-form{
+        padding-top: 2em;
+
+        .footer-correct-data{
+            display: flex;
+            justify-content: center;
+            color: #57B850;
+            font-weight: 600;
+            padding-bottom: 0.5em;
+        }
+        
+        .footer-form-name-email{
+            display: flex;
+           
+            .footer-form-name,
+            .footer-form-email{
+               display: flex;
+               flex-direction: column;
+               padding-bottom: 2em;
+               padding-left: 2em;
+
+               .footer-form-input-label{
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                padding-top: 1em;
+    
+    
+                input{
+                    border: none;
+                    border-bottom: 0.1em solid $line-color;
+                    width: 12vw;
+                    background-color: transparent;
+                    padding-top: 1em;
+                    padding-left: 1em;
+                } 
+
+                .footer-error{
+                    padding-top: 0.5em;
+                    font-size: 0.8em;
+                    color: red;
+                }
+            }
+           }
+        }
+
+        .footer-form-message{
+            .footer-form-message-label{
+                display: flex;
+                flex-direction: column;
+                font-weight: 600;
+
+                textarea{
+                    border: none;
+                    border-bottom: 0.1em solid $line-color;
+                    background-color: transparent;
+                    padding-top: 1em;
+                }
+                
+                .footer-error{
+                    padding-top: 0.5em;
+                    font-size: 0.8em;
+                    color: red;
+                }
+            }
+        }
+        
+        .footer-form-btn{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 2em;
+
+            button{
+                font-size: 1.2em;
+                background-color: transparent;
+                border: 0.08em solid $font-color-primary;
+                padding: 0.9em 3em;
+
+                &:hover{
+                    border: 0.08em solid $font-color-secondary;  
+                }
+            }
+        }
+        
+    }
+
+    .footer-bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-self: flex-end;
+        z-index: 2;
+        position: relative;
+
+        span{
+            margin-left: 40vw;
+        }
+
+        .footer-bottom-icons{
+            margin-right: 9em;
+
+            img{
+                padding-right: 1em;
+            }
+        }
+
+        
+
+    } 
+}
