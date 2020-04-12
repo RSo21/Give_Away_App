@@ -1,6 +1,6 @@
 # Give away app
 
-in progress "form" give away
+in progress "form" give away and mobile version
 
 
 ## General info
