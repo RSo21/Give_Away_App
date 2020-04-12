@@ -20,7 +20,7 @@ class App extends Component {
         <BrowserRouter>
         <AuthProvider>
           <Switch>
-              <Route exact path="/Give_Away_App" component={Home}/>
+              <Route exact path="/GiveAwayApp" component={Home}/>
               <Route exact path="/login" component={Login}/>
               <Route exact path="/register" component={Register}/>
               <Route exact path="/logout" component={LogOut}/>
