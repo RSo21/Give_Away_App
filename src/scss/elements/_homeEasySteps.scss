@@ -8,5 +8,15 @@
     p{
         font-size: 3em;
         padding-bottom: 1em;
+
+        @include mobile{
+            font-size: 1em;
+        }
+    }
+
+    .decoration{
+        @include mobile{
+            width: 35vw;
+        }
     }
 }
