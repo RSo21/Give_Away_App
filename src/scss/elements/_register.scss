@@ -5,6 +5,10 @@
     flex-direction: column;
     height: 70vh;
 
+    @include mobile{
+        height: 100vh;
+    }
+
     .register-text{
         padding-bottom: 1em;
 
@@ -12,12 +16,26 @@
             font-size: 3em;
             text-align: center;
             padding-bottom: 0.7em;
+
+            @include mobile{
+                font-size: 2em;
+            }
+        }
+
+        .decoration{
+            @include mobile{
+                width: 30vw;
+            }
         }
 
         .register-success{
             font-size: 1.1em;
             color: #57B850;
             padding-top: 1em;
+
+            @include mobile{
+                font-size: 0.8em;
+            }
 
         }
     }
@@ -31,6 +49,11 @@
         height: 30vh;
         width: 25vw;
         padding-bottom: 2em;
+
+        @include mobile{
+            height: 42vh;
+            width: 70vw;
+        }
 
         .register-form-input-label,
         .register-form-input-label-2{
@@ -46,6 +69,10 @@
                 width: 15vw;
                 background: transparent;
                 padding-top: 1em;
+
+                @include mobile{
+                    width: 40vw;
+                }
 
                 &:focus {
                     border-bottom: 0.1em solid $btn-account-border-color;
@@ -68,12 +95,21 @@
         padding-top: 2em;
         color: $font-color-primary;
 
+        @include mobile{
+            padding-top: 1em;
+        }
+
         button{
             padding: 1.2em 2em;
             border: none;
             background-color: transparent;
             font-size: 1.3em;
             color: $font-color-primary;
+
+            @include mobile{
+                padding: 1em 1.5em;
+                font-size: 1em;
+            }
 
             a{
                 text-decoration: none;
