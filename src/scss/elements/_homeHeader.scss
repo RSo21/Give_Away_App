@@ -7,11 +7,20 @@
         background-position: center top;
         width: 48vw;
         height: 100vh;
+
+        @include mobile{
+            display: none;
+        }
     }
 
     .header-content{
         width: 50vw;
         height: 100vh;
+
+        @include mobile{
+            width: 100vw;
+            height: 80vh;
+        }
         
 
         .header-content-text{
@@ -22,14 +31,32 @@
             justify-content: center;
             align-items: center;
 
+            @include mobile{
+                width: 100vw;
+                height: 80vh;
+            }
+
             h1{
                 font-size: 2.5em;
-                //padding-right: 2em;
+
+                @include mobile{
+                    font-size: 1.5em;
+                }
             }
             p{
                 font-size: 2em;
                 padding: 1em 0em 1em 0; 
 
+                @include mobile{
+                    font-size: 1em;
+                }
+
+            }
+
+            .decoration{
+                @include mobile{
+                    width: 30vw;
+                }
             }
 
             .header-content-btn{
@@ -41,6 +68,11 @@
                     margin-right: 1em;
                     color: $font-color-primary;
                     border: 0.1em solid $font-color-primary;
+
+                    @include mobile{
+                        padding: 0.5em 1.5em;
+                        font-size: 1em;
+                    }
 
                     a{
                         text-decoration: none;
@@ -62,6 +94,11 @@
                     font-size: 1.5em;
                     color: $font-color-primary;
                     border: 0.1em solid $font-color-primary;
+
+                    @include mobile{
+                        padding: 0.5em 1.5em;
+                        font-size: 1em;
+                    }
 
                     a{
                         text-decoration: none;
