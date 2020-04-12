@@ -46,7 +46,7 @@ class LogElements  extends Component {
                      </div>
                     <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
                     <p activeclass="active" spy="true" offset={50} duration={500}>
-                        <Link to="/">Start</Link>
+                        <Link to="/Give_Away_App">Start</Link>
                     </p>
                     <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
                         <a href = "#howWork">How we work?</a>
@@ -77,7 +77,7 @@ class LogElements  extends Component {
                     </div>
                     <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
                         <p activeclass="active" spy="true" offset={50} duration={500}>
-                            <Link to="/">Start</Link>
+                            <Link to="/Give_Away_App">Start</Link>
                         </p>
                         <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
                             <a href = "#howWork">How we work?</a>

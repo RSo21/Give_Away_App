@@ -15,7 +15,7 @@ class LogOut extends Component{
                     <div className = "logout">
                         <p>Logged out successfully!</p>
                         <img className = "decoration" src = {Decoration} alt = "decoration"/>
-                        <Link to="/"><button>Home</button> </Link>
+                        <Link to="/Give_Away_App"><button>Home</button> </Link>
                     </div>
             </>
         );
