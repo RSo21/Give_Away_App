@@ -5,6 +5,9 @@
     align-items: center;
     flex-direction: column;
 
+    @include mobile{
+        display: none}
+
     .whom-we-helps-text{
         text-align: center;
         

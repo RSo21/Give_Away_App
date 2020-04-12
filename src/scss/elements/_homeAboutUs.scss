@@ -3,6 +3,10 @@
     flex-direction: row;
     color: $font-color-primary;
 
+    @include mobile{
+        flex-direction: column;
+    }
+
     .about-us-text{
         background-color: $bg-color-secondary;
         width: 50vw;
@@ -12,9 +16,24 @@
         justify-content: center;
         align-items: center;
 
+        @include mobile{
+            width: 100vw;
+            height: 60vh;
+        }
+
         #about{
             font-size: 3em;
             padding-bottom: 0.6em;
+
+            @include mobile{
+                font-size: 2em;
+            }
+        }
+
+        .decoration{
+            @include mobile{
+                width: 30vw;
+            }
         }
 
         .about-us-text-two{
@@ -22,9 +41,18 @@
             text-align: center;
             padding: 2em 7em 2em;
             line-height: 2em;
+
+            @include mobile{
+                font-size: 0.8em;
+            }
         }
         .signature{
             padding-left: 20vw;
+
+            @include mobile{
+                width: 25vw;
+            }
+
         }
     }
     .about-us-photo{
@@ -34,6 +62,11 @@
         background: url(./../../assets/Hands.jpg);
         background-size: cover;
         background-position-x: center;
+
+        @include mobile{
+            width: 100vw;
+            height: 40vh;
+        }
 
     }
 }

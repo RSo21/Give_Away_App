@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
+
+    @include mobile{
+        height: 20vh;
+    }
     
     .donate-things-btn{
         background-color: transparent;
@@ -11,6 +15,11 @@
         color: $font-color-primary;
         border: 0.05em solid $font-color-primary;
         font-weight: 300;
+
+        @include mobile{
+            padding: 1em 1.5em;
+            font-size: 1em;
+        }
 
         a{
             text-decoration: none;
