@@ -6,10 +6,24 @@
         flex-direction: column;
         padding-bottom: 1em;
 
+        @include mobile{
+            height: 100vh;
+        }
+
         p{
             font-size: 3em;
             text-align: center;
             padding-bottom: 0.8em;
+
+            @include mobile{
+                font-size: 1.7em;
+            }
+        }
+
+        .decoration{
+            @include mobile{
+                width: 30vw;
+            }
         }
 
         img{
@@ -23,6 +37,11 @@
         background-color: transparent;
         font-size: 1.3em;
         border: 0.1em solid $font-color-primary;
+
+        @include mobile{
+            padding: 1em 1.5em;
+            font-size: 1em;
+        }
 
         a{
             text-decoration: none;
