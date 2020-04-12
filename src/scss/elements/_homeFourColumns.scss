@@ -5,6 +5,11 @@
     padding: 2em 20em;
     color: $font-color-primary;
 
+    @include mobile{
+        flex-direction: column;
+        padding: 2em 5em;
+    }
+
     .home-four-columns-element{
         display: flex;
         flex-direction: column;
@@ -15,20 +20,38 @@
         img{
             width: 4em;
             height: 4em;
+
+            @include mobile{
+                width: 2em;
+                height: 2em;
+            }
         }
 
         .home-four-columns-step{
             text-align: center;
             padding: 2em 2em 1em 2em;
+
+            @include mobile{
+                font-size: 0.9em;
+            }
         }
 
         hr{
             height: 0.2em;
             color: $line-color;
             width: 5vw;
+
+            @include mobile{
+                width: 15vw;
+                height: 0.002em;
+            }
         }
         .home-four-columns-things{
             text-align: center;
             padding: 0.5em 2em 1em;
+
+            @include mobile{
+                font-size: 0.7em;
+            }
         }
 }
