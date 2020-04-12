@@ -6,11 +6,11 @@ const NavigationLoginAndRegister  = () => {
 
     return(
         <div className = "navigation">
-            <Link to="/GiveAwayApp">Start</Link>
-            <Link to="/GiveAwayApp">How we work?</Link>
-            <Link to="/GiveAwayApp">About Us</Link>
-            <Link to="/GiveAwayApp">Foundation and organizations</Link>
-            <Link to="/GiveAwayApp">Contact</Link>
+            <Link to="/Give_Away_App">Start</Link>
+            <Link to="/Give_Away_App">How we work?</Link>
+            <Link to="/Give_Away_App">About Us</Link>
+            <Link to="/Give_Away_App">Foundation and organizations</Link>
+            <Link to="/Give_Away_App">Contact</Link>
         </div>
     )
 }

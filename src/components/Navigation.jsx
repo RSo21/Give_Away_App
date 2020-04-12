@@ -6,7 +6,7 @@ const Navigation  = () => {
 
     return(
         <div className = "navigation">
-            <Link to="/GiveAwayApp">Start</Link>
+            <Link to="/Give_Away_App">Start</Link>
             <a href = "#howWork">How we work?</a>
             <a href = "#about">About Us</a>
             <a href = "#help">Foundation and organizations</a>
