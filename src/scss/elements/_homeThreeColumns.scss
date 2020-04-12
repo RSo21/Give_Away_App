@@ -1,10 +1,14 @@
 .home-three-columns{
-    //background: url(./../../assets/3ColumnsBackground.png);
     background-color: $bg-color-secondary;
     width: 100vw;
     height: auto;
     display: flex;
     justify-content: space-evenly;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
 
     .home-three-columns-element{
         display: flex;
@@ -16,10 +20,19 @@
             color: $font-color-primary;
             font-size: 4.7em;
             padding: 0.8em 0 0.5em 0;
+
+            @include mobile{
+                font-size: 2em;
+                padding-top: 0.6em;
+            }
         }
         .home-three-columns-title{
             color: $font-color-primary;
             font-size: 1.1em;
+
+            @include mobile{
+                font-size: 0.7em;
+            }
         }
         .home-three-columns-text{
             color: $font-color-primary;
@@ -27,6 +40,11 @@
             text-align: center;
             line-height: 2em;
             padding: 2em 4em 3em;
+
+            @include mobile{
+                font-size: 0.6em;
+                padding: 2em 6em 2em;
+            }
         }
     }
 }
