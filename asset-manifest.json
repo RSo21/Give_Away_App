@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Give_Away_App/static/css/main.c762cda3.chunk.css",
-    "main.js": "/Give_Away_App/static/js/main.0cdf9565.chunk.js",
-    "main.js.map": "/Give_Away_App/static/js/main.0cdf9565.chunk.js.map",
+    "main.js": "/Give_Away_App/static/js/main.f927e259.chunk.js",
+    "main.js.map": "/Give_Away_App/static/js/main.f927e259.chunk.js.map",
     "runtime-main.js": "/Give_Away_App/static/js/runtime-main.0cb404b6.js",
     "runtime-main.js.map": "/Give_Away_App/static/js/runtime-main.0cb404b6.js.map",
     "static/js/2.dd82bf48.chunk.js": "/Give_Away_App/static/js/2.dd82bf48.chunk.js",
     "static/js/2.dd82bf48.chunk.js.map": "/Give_Away_App/static/js/2.dd82bf48.chunk.js.map",
     "index.html": "/Give_Away_App/index.html",
-    "precache-manifest.241d9e0839eaeef6f10c44a8546860f7.js": "/Give_Away_App/precache-manifest.241d9e0839eaeef6f10c44a8546860f7.js",
+    "precache-manifest.b1ba7a10e53f2c94ecbdb6733de0ac5c.js": "/Give_Away_App/precache-manifest.b1ba7a10e53f2c94ecbdb6733de0ac5c.js",
     "service-worker.js": "/Give_Away_App/service-worker.js",
     "static/css/main.c762cda3.chunk.css.map": "/Give_Away_App/static/css/main.c762cda3.chunk.css.map",
     "static/js/2.dd82bf48.chunk.js.LICENSE.txt": "/Give_Away_App/static/js/2.dd82bf48.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.0cb404b6.js",
     "static/js/2.dd82bf48.chunk.js",
     "static/css/main.c762cda3.chunk.css",
-    "static/js/main.0cdf9565.chunk.js"
+    "static/js/main.f927e259.chunk.js"
   ]
 }
