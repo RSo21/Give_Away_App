@@ -41,9 +41,9 @@ Project is created with:
 
 To run this project, install it locally using npm:
 
-*  ```git clone https://github.com/RSo21/Give-Away-App.git``` to clone the repository
+*  ```git clone https://github.com/RSo21/Give_Away_App.git``` to clone the repository
 * ```npm install``` to install all dependencies
-* ```npm start``` and ```http://localhost:3000/``` in the browser to preview the app 
+* ```npm start``` and ```http://localhost:3000/Give_Away_App``` in the browser to preview the app 
 
 
 ### Demo
