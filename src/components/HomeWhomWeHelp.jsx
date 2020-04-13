@@ -14,11 +14,11 @@ class WhomWeHelp extends Component{
             <div className = "whom-help-choice-name-and-donation">
                 {/* <p>{foundation.name}</p>
                 <span>{foundation.donations}</span> */}
-                <p>{organization.name}</p>
+                <p className = "whom-we-help-name">{organization.name}</p>
                 <span>{organization.donations}</span>
             </div>
             {/* <p>{foundation.mission}</p> */}
-            <p>{organization.mission}</p>
+            <p className = "whom-we-help-mission">{organization.mission}</p>
         </div>    
         </>
         )

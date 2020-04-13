@@ -1,12 +1,10 @@
 .whom-we-helps{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    @include mobile{
-        display: none}
 
     .whom-we-helps-text{
         text-align: center;
@@ -15,6 +13,16 @@
             font-size: 4em;
             font-weight: 400;
             padding-bottom: 1em;
+
+            @include mobile{
+                font-size: 1.5em;
+            }
+        }
+
+        .decoration{
+            @include mobile{
+                width: 30vw;
+            }
         }
 
     }
@@ -32,6 +40,11 @@
         padding: 2em 20em;
         font-size: 1.5em;
         text-align: center;
+
+        @include mobile{
+            font-size: 0.6em;
+            padding: 0em 6em 2em;
+        }
     }
 
     .whom-we-help-choice{
@@ -41,13 +54,44 @@
             padding: 1em;
             border-bottom: 0.08em solid black;
 
+            @include mobile{
+                font-size: 0.6em;
+                padding: 1em 0.5em 0.5em;
+                border-bottom: 0.02em solid black;
+            }
+
             .whom-help-choice-name-and-donation{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
 
+                .whom-we-help-name{
+                    @include mobile{
+                        font-size: 0.6em;
+                    }
+                }
+
                 span{
                     font-size: 0.8em;
+
+                    @include mobile{
+                        font-size: 0.4em;
+                    }
+                }
+
+                .whom-we-help-mission{
+                    font-size: 1em;
+                    @include mobile{
+                        font-size: 0.4em;
+                    }
+                }
+            }
+
+            .whom-we-help-mission{
+                font-size: 1em;
+                @include mobile{
+                    font-size: 0.5em;
+                    padding-top: 0.5em;
                 }
             }
         }
@@ -60,8 +104,17 @@
         cursor: pointer;
         padding-top: 2em;
 
+
+        @include mobile{
+            font-size: 0.7em;
+        }
+
         li{
             padding: 1em;
+
+            @include mobile{
+                padding: 0.5em;
+            }
 
             
         }
