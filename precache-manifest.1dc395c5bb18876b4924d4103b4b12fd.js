@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "733b56f16db0d2e2498c4982fe657a9e",
+    "revision": "f2564da0c2fdf43f4a5de6d1d93b94c8",
     "url": "/Give_Away_App/index.html"
   },
   {
-    "revision": "40ca76b206c6f1ae6a75",
-    "url": "/Give_Away_App/static/css/main.5aa6b361.chunk.css"
+    "revision": "7d99d235ac2ad980c935",
+    "url": "/Give_Away_App/static/css/main.641c8a86.chunk.css"
   },
   {
-    "revision": "f77714d8fd06027156e7",
-    "url": "/Give_Away_App/static/js/2.dd82bf48.chunk.js"
+    "revision": "7ed07bfb251db6178574",
+    "url": "/Give_Away_App/static/js/2.325dbebc.chunk.js"
   },
   {
     "revision": "73138c634db8d37252cbabcb33689813",
-    "url": "/Give_Away_App/static/js/2.dd82bf48.chunk.js.LICENSE.txt"
+    "url": "/Give_Away_App/static/js/2.325dbebc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40ca76b206c6f1ae6a75",
-    "url": "/Give_Away_App/static/js/main.f927e259.chunk.js"
+    "revision": "7d99d235ac2ad980c935",
+    "url": "/Give_Away_App/static/js/main.86e7d36c.chunk.js"
   },
   {
     "revision": "49f0b159ea55380ae2c6",
