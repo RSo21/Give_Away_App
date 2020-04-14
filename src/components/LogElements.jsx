@@ -49,18 +49,6 @@ class LogElements  extends Component {
                         <Link to="/Give_Away_App">Start</Link>
                     </p>
                     <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                        <a href = "#howWork">How we work?</a>
-                    </p>
-                    <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                        <a href = "#about">About Us</a>
-                    </p>
-                    <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                        <a href = "#help">Foundation and organizations</a>
-                    </p>
-                    <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                        <a href = "#contact">Contact</a>
-                    </p>
-                    <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
                         <Link to="/login">Sign In</Link>
                     </p>
                     <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
@@ -73,33 +61,20 @@ class LogElements  extends Component {
         }else if (isMobile){
             return(
                 <header className = "page-header-mobile">
-                    <div><i className = "icon-menu" menuClicked={this.handleClick}></i> 
+                    <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon" menuClicked={this.handleClick}/> 
                     </div>
                     <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
                         <p activeclass="active" spy="true" offset={50} duration={500}>
                             <Link to="/Give_Away_App">Start</Link>
                         </p>
                         <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <a href = "#howWork">How we work?</a>
+                            <Link to="/giveaway">Give Away</Link>
                         </p>
                         <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <a href = "#about">About Us</a>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <a href = "#help">Foundation and organizations</a>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <a href = "#contact">Contact</a>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <button className = "log-el-btn-first"><Link to="/giveaway">Give Away</Link></button>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <button className = "log-el-btn-second"><Link to="/logout" onClick={this.endSession}>Log Out</Link></button>
+                            <Link to="/logout" onClick={this.endSession}>Log Out</Link>
                         </p>
                     </Menu>
             </header>
-
             )
         
     }else if (sessionStorage.getItem("email") == null) {
@@ -122,7 +97,6 @@ class LogElements  extends Component {
             )
         }
     }
-
 }
 
 
