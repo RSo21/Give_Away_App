@@ -3,19 +3,26 @@
     .give-away-photo{
         background: url(./../../assets/Form-Hero-Image.jpg);
         background-repeat: no-repeat;
-        //background-size: 160%;
         background-size: cover;
         background-position-x: right;
         width: 50vw;
         height: 100vh;
+
+        @include mobile{
+            display: none;
+        }
     }
 
     .give-away-content{
         width: 50vw;
         height: 100vh;
-        
-        
 
+        @include mobile{
+            width: 100vw;
+            height: 60vh;
+        }
+        
+    
         .give-away-content-text{
             width: 50vw;
             height: 80vh;
@@ -24,24 +31,51 @@
             justify-content: center;
             align-items: center;
 
+            @include mobile{
+                width: 100vw;
+                height: 60vh;
+                
+            }
+
             h1{
                 font-size: 2.5em;
                 padding-right: 2em;
+
+                @include mobile{
+                    font-size: 1.3em;
+                    padding: 0;
+                }
             }
             p{
                 font-size: 2em;
                 padding: 1em 0em 2em 0; 
                 padding-right: 2em;
 
+                @include mobile{
+                    font-size: 1em;
+                    padding-right: 0;
+                    text-align: center;
+                }
+
             }
             .decoration{
                 padding-right: 2em;
+
+                @include mobile{
+                    width: 30vw;
+                    padding-right: 0;
+                }
+
             }
 
             .give-away-squares{
                 display: flex;
                 flex-direction: row;
                 padding-right: 3em;
+
+                @include mobile{
+                    display: none;
+                }
 
                 .square{
                     border: 0.09em solid $font-color-primary;
@@ -80,10 +114,19 @@
         font-size: 2em;
         font-weight: 600;
         padding: 1em 0 0.7em 2em;
+
+        @include mobile{
+            padding-top: 1.5em;
+            font-size: 1em;
+        }
     }
     .header-important-text{
         font-size: 1em;
         padding-left: 4em;
+
+        @include mobile{
+            font-size: 0.5em;
+        }
 
         a{
             text-decoration: none;
