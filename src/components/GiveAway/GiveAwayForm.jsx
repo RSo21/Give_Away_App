@@ -282,10 +282,6 @@ class GiveAwayForm  extends Component{
                                     Elder people
                                     </label>
 
-                                    <label className = "footer-form-message-label">
-                                    Enter the name of a specific location (optional): &nbsp;
-                                        <textarea rows = "1" cols = "50" type = "text"/>    
-                                    </label>
                                 </form>
                                 <div className = "steps-buttons">
                                     <button onClick = {this.handleBack}>BACK</button>
@@ -371,22 +367,26 @@ class GiveAwayForm  extends Component{
                     <div className = "give-away-form-container">
                         <div className = "step">
                             <div className = "step5">
-                                <p>Summary of your donation</p>
-                                <div className = "step5donate">
+                                <p className = "step5-text">Summary of your donation:</p>
+                                <div className = "step5-donate">
                                     <p>You donate: </p>
-                                    <img src = {IconOne} alt = "icon1" /> <span>{step2Option} bags, {step1Value}, {step3Checkbox}</span> 
-                                    <img src = {IconThree} alt = "icon1" /> <span>Location: {step3City}</span>
+                                    <div className = "step5-donate-row">
+                                        <img src = {IconOne} alt = "icon1" /> <span>{step2Option} bags, {step1Value}, {step3Checkbox}</span> 
+                                    </div>
+                                    <div className = "step5-donate-row">
+                                        <img src = {IconThree} alt = "icon1" /> <span>Location: {step3City}</span> 
+                                    </div>
                                 </div>
-                                <div className = "step5data">
-                                    <div className = "step5adress">
-                                        <p>Pickup Address</p>
+                                <div className = "step5-data">
+                                    <div className = "step5-adress">
+                                        <p>Pickup Address: </p>
                                         <p>Street: {step4Street}</p>
                                         <p>City: {step4City}</p>
-                                        <p>PostCode: {step4PostCode}</p>
+                                        <p>Post Code: {step4PostCode}</p>
                                         <p>Phone: {step4Phone}</p>
                                     </div>
-                                    <div className = "step5term">
-                                        <p>Date of receipt</p>
+                                    <div className = "step5-term">
+                                        <p>Date of receipt: </p>
                                         <p>Date: {step4Date}</p>
                                         <p>Time: {step4Time}</p>
                                         <p>Notes for deliverymen: {notes}</p>

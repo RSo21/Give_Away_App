@@ -6,10 +6,10 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: flex-start;
 
     @include mobile{
+        height: 100vh;
         background-image: none;
         background-color: $bg-color-secondary;
     }
@@ -29,6 +29,10 @@
         .step-error{
             color: red;
             padding-bottom: 0.5em;
+
+            @include mobile{
+                font-size: 0.7em;
+            }
         }
 
         .step1-btn{
@@ -46,10 +50,19 @@
                 font-size: 2em;
                 padding-bottom: 1em;
                 font-weight: 700;
+
+
+                @include mobile{
+                    font-size: 1em;
+                }
             }
 
             label{
                 padding: 0.5em;
+
+                @include mobile{
+                    font-size: 0.7em;
+                }
 
                 input[type='radio'] {
                     margin-right: 1em;
@@ -70,11 +83,19 @@
                     font-size: 1.5em;
                     font-weight: 700;
                     padding-bottom: 2em;
+
+                    @include mobile{
+                        font-size: 1em;
+                    }
                 }
 
                 label{
                     font-size: 1.1em;
                     padding-bottom: 2em;
+
+                    @include mobile{
+                        font-size: 0.8em;
+                    }
 
                     select{
                         width: 10vw;
@@ -94,29 +115,39 @@
                     font-size: 1.1em;
                     padding-bottom: 1em;
 
+                    @include mobile{
+                        font-size: 0.9em;
+                    }
+
                     select{
                         width: 10vw;
                         background-color: transparent;
+
+                        @include mobile{
+                            width: 25vw;
+                        }
                     }
                 }
 
                 .step3-whom-we-help{
                     font-size: 1.3em;
                     padding-bottom: 0.5em;
+
+                    @include mobile{
+                        font-size: 0.8em;
+                    }
                 }
 
                 .step3-label{
+
+                    @include mobile{
+                        font-size: 0.7em;
+                    }
 
                     input[type='checkbox'] {
                         margin-right: 0.7em;
                     }
 
-                }
-
-                .footer-form-message-label{
-                    textarea{
-                        background-color: transparent;
-                    }
                 }
             }
         }
@@ -128,23 +159,44 @@
             .step4-text{
                 font-size: 1.5em;
                 padding-bottom: 1em;
+
+                @include mobile{
+                    font-size: 0.9em;
+                    padding: 0.5em 1em 0 0;
+                }
             }
             .step4-form{
                 display: flex;
                 flex-direction: row;
+
+                @include mobile{
+                    flex-direction: column;
+                }
 
                 .adress,
                 .date{
                     display: flex;
                     flex-direction: column;
 
+                    @include mobile{
+                        padding-top: 1em;
+                    }
+
                     p{
                         font-size: 1.2em;
                         padding-bottom: 0.7em;
+
+                        @include mobile{
+                            font-size: 0.8em;
+                        }
                     }
 
                     label{
                         padding: 0 0 0.5em;
+
+                        @include mobile{
+                            font-size: 0.6em;
+                        }
         
                         input[type='text'],
                         input[type='number'],
@@ -159,12 +211,102 @@
 
         }
 
+        .step5{
+            display: flex;
+            flex-direction: column;
+
+            .step5-text{
+                font-size: 2em;
+                font-weight: 600;
+                text-align: center;
+                padding: 0.8em 0;
+
+                @include mobile{
+                    font-size: 1.1em;
+                }
+            }
+            .step5-donate{
+                display: flex;
+                flex-direction: column;
+                                    
+                p{
+                    font-size: 1.5em;
+                    padding: 0.8em 0;
+                    font-weight: 600;
+
+                    @include mobile{
+                        font-size: 0.9em;
+                    }
+                }
+
+                .step5-donate-row{
+                    padding: 0.5em 0;
+
+    
+                    img{
+                        width: 2em;
+                        height: 2em;
+
+                        @include mobile{
+                            width: 1em;
+                            height: 1em;
+                        }
+                     }
+
+                     span{
+                        font-weight: 600;
+
+                        @include mobile{
+                            font-size: 0.8em;
+                        }
+                     }
+                }
+            }
+
+            .step5-data{
+                display: flex;
+                flex-direction: row;
+
+                .step5-adress{
+                    padding-right: 3.5em;
+
+                    @include mobile{
+                        padding-right: 1.5em;
+                    }
+                }
+
+                .step5-adress,
+                .step5-term{
+                    p{
+                        padding: 0.7em 0;
+
+                        @include mobile{
+                            font-size: 0.7em;
+                        }
+                    }
+
+                    p{
+                        &:first-of-type{
+                            font-size: 1.2em;
+                            font-weight: 600;
+
+                            @include mobile{
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .step6{
             padding-left: 10em;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            height: 70vh;
 
             @include mobile{
                 padding-left: 0;
@@ -174,7 +316,6 @@
                 font-size: 2em;
                 font-weight: 200;
                 padding: 0.5em 0;
-                vertical-align: middle;
 
                 @include mobile{
                     text-align: center;
@@ -192,6 +333,18 @@
     .steps-buttons{
         padding-top: 2em;
 
+        @include mobile{
+            padding-top: 1em;
+        }
+
+        button{
+            padding: 1em 2em;
+
+            @include mobile{
+                padding: 0.5em 1em;
+            }
+        }
+
 
         button{
             &:first-of-type{
@@ -201,8 +354,3 @@
     }
 
 }
-
-
-
-
-// input[type='text'] 
