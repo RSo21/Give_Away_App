@@ -5,46 +5,130 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: flex-start;
+
+    @include mobile{
+        background-image: none;
+        background-color: $bg-color-secondary;
+    }
+
+    .step-counter{
+        font-size: 1.5em;
+        padding: 3.5em 0 1.7em 4em;
+    }
 
     .step{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3em 0 2em 3em;
+        padding: 3em 0 1em 3em;
 
-        p{
-            font-size: 1.4em;
-            text-align: left;
+        .step-error{
+            color: red;
+            padding-bottom: 0.5em;
+        }
+
+        .step1-btn{
+            margin-top: 2em;
+            width: 15vh;
         }
 
 
         .step1{
             display: flex;
             flex-direction: column;
+            padding: 1em 2em;
 
+            .step1-select{
+                font-size: 2em;
+                padding-bottom: 1em;
+                font-weight: 700;
+            }
+
+            label{
+                padding: 0.5em;
+
+                input[type='radio'] {
+                    margin-right: 1em;
+                }
+            }
         }
 
         .step2{
             display: flex;
             flex-direction: column;
+            padding: 1em 2em;
 
             .step2-form{
                 display: flex;
                 flex-direction: column;
+
+                .step2-select{
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    padding-bottom: 2em;
+                }
+
+                label{
+                    font-size: 1.1em;
+                    padding-bottom: 2em;
+
+                    select{
+                        width: 10vw;
+                        background-color: transparent;
+                    }
+                }
             }
         }
 
         .step3{
+            padding: 1em 2em;
             .step3-form{
                 display: flex;
                 flex-direction: column;
+
+                label{
+                    font-size: 1.1em;
+                    padding-bottom: 1em;
+
+                    select{
+                        width: 10vw;
+                        background-color: transparent;
+                    }
+                }
+
+                .step3-whom-we-help{
+                    font-size: 1.3em;
+                    padding-bottom: 0.5em;
+                }
+
+                .step3-label{
+
+                    input[type='checkbox'] {
+                        margin-right: 0.7em;
+                    }
+
+                }
+
+                .footer-form-message-label{
+                    textarea{
+                        background-color: transparent;
+                    }
+                }
             }
         }
 
         .step4{
             display: flex;
             flex-direction: column;
+
+            .step4-text{
+                font-size: 1.5em;
+                padding-bottom: 1em;
+            }
             .step4-form{
                 display: flex;
                 flex-direction: row;
@@ -53,6 +137,23 @@
                 .date{
                     display: flex;
                     flex-direction: column;
+
+                    p{
+                        font-size: 1.2em;
+                        padding-bottom: 0.7em;
+                    }
+
+                    label{
+                        padding: 0 0 0.5em;
+        
+                        input[type='text'],
+                        input[type='number'],
+                        textarea
+                         {
+                            margin-right: 1em;
+                            background-color: transparent;
+                        }
+                    }
                 }
             }
 
@@ -65,23 +166,38 @@
             justify-content: center;
             align-items: center;
 
+            @include mobile{
+                padding-left: 0;
+            }
+
             p{
                 font-size: 2em;
                 font-weight: 200;
                 padding: 0.5em 0;
+                vertical-align: middle;
+
+                @include mobile{
+                    text-align: center;
+                    font-size: 0.8em;
+                }
+            }
+
+            .decoration{
+                @include mobile{
+                    width: 30vw;
+                }
             }
         }
     }
     .steps-buttons{
         padding-top: 2em;
 
+
         button{
             &:first-of-type{
                 margin-right: 2em;
             }
-        }
-
-        
+        }    
     }
 
 }

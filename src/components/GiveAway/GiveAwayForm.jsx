@@ -53,7 +53,7 @@ class GiveAwayForm  extends Component{
             } else {
                 if (step2Option === "") {
                     this.setState({
-                        step2Error: true,
+                        step2Error: "At least one value must be selected",
                     });
                 }
             }
@@ -100,17 +100,17 @@ class GiveAwayForm  extends Component{
             }
             if (!phoneValidation.test(step4Phone)) {
                 this.setState({
-                    step4PhoneError: "the phone number must have 9 numbers",
+                    step4PhoneError: "The phone number must have 9 numbers",
                 })
             }
             if (step4Date.length < 6) {
                 this.setState({
-                    step4DateError: true,
+                    step4DateError: "The date must have 6 characters",
                 })
             }
             if (step4Time.length < 3) {
                 this.setState({
-                    step4TimeError: true,
+                    step4TimeError: "The time must have 3 characters",
                 })
             }
         }
@@ -140,7 +140,6 @@ class GiveAwayForm  extends Component{
         this.setState({
             step2Option: e.target.value,
         });
-        console.log(this.state.step2Option);
     };
 
     
@@ -161,8 +160,6 @@ class GiveAwayForm  extends Component{
         this.setState({
             [e.target.name]: e.target.value,
         });
-        console.log(this.state.step4Phone)
-
     };
 
     handleConfirm = () => {
@@ -173,20 +170,10 @@ class GiveAwayForm  extends Component{
 
     handleSubmit = (e) => {
         e.preventDefault();
-
-        this.setState({
-            step4StreetError: false,
-            step4CityError: false,
-            step4PostCodeError: false,
-            step4PhoneError: false,
-            step4DateError: false,
-            step4TimeError: false,
-        });
-
     }
 
     render(){
-        const {counter, step1Error, step1Value, step2Option, step3City, step3Checkbox, step3Error, step4Street, step4City, step4PostCode, 
+        const {counter, step1Error, step1Value, step2Option, step2Error, step3City, step3Checkbox, step3Error, step4Street, step4City, step4PostCode, 
             step4Phone, step4Date, step4Time, step4StreetError, step4CityError, step4PostCodeError, step4PhoneError, step4DateError,
             step4TimeError, notes} = this.state
 
@@ -194,11 +181,11 @@ class GiveAwayForm  extends Component{
             return(
                 <>
                     <div className = "give-away-form-container">
-                        <div className = "step">
-                            <p>Step {counter}/4</p>
-                            {step1Error ? <p>{step1Error}</p> : ""}
+                        <p className = "step-counter">Step {counter}/4</p>
+                        <div className = "step"> 
+                            {step1Error ? <p className = "step-error">{step1Error}</p> : ""}
                             <form className = "step1" onSubmit={this.handleSubmit}>
-                                Select what you want to add     
+                                <p className = "step1-select">Select what you want to add: </p>    
                                 <label className = "step1-label">
                                     <input type="radio" name="step1Value" value="clothes that can be used again" onChange={this.handleStep1}/>
                                 clothes that can be used again
@@ -218,9 +205,9 @@ class GiveAwayForm  extends Component{
                                 <label className = "step1-label">
                                     <input type="radio" name="step1Value" value="other" onChange={this.handleStep1}/>
                                 other
-                                </label>
-                                <button onClick = {this.handleNext}>NEXT</button>
+                                </label> 
                             </form>
+                            <button className = "step1-btn" onClick = {this.handleNext}>NEXT</button>
                         </div>           
                     </div>
                 </>
@@ -229,18 +216,19 @@ class GiveAwayForm  extends Component{
             return(
                 <>
                     <div className = "give-away-form-container">
+                        <p className = "step-counter">Step {counter}/4</p>
                         <div className = "step">
-                            <p>Step {counter}/4</p>
+                            {step2Error ? <p className = "step-error">{step2Error}</p> : ""}
                             <div className = "step2"> 
                                 <form className = "step2-form" onSubmit={this.handleSubmit} >
-                                Select the number of bags you have packed your items into
-                                    <label>Number of 60l bags
-                                        <select name="bags"  value = {step2Option} onChange={this.handleStep2}>
-                                            <option value="1" >1</option>
-                                            <option value="2" >2</option>
-                                            <option value="3" >3</option>
-                                            <option value="4" >4</option>
-                                            <option value="5" >5</option>
+                                <p className = "step2-select">Select the number of bags you have packed your items into:</p>
+                                    <label>Number of 60l bags: &nbsp;
+                                        <select name="bags" value = {step2Option} onChange={this.handleStep2}>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
                                         </select>
                                     </label>
                                 </form>
@@ -257,12 +245,12 @@ class GiveAwayForm  extends Component{
             return(
                 <>
                     <div className = "give-away-form-container">
+                        <p className = "step-counter">Step {counter}/4</p>
                         <div className = "step">
-                            <p>Step {counter}/4</p>
-                            {step3Error ? <p>{step3Error}</p> : ""}
+                            {step3Error ? <p className = "step-error">{step3Error} </p> : ""}
                             <div className = "step3">   
                                 <form className = "step3-form" onSubmit={this.handleSubmit} >
-                                    <label>Lokalization
+                                    <label>Lokalization: &nbsp;
                                         <select name="localization" value = {step3City} onChange={this.handleStep3City}>
                                             <option value="poznan">Poznan</option>
                                             <option value="szczecin">Szczecin</option>
@@ -272,7 +260,7 @@ class GiveAwayForm  extends Component{
                                         </select>
                                     </label>
 
-                                    Whom you want to help
+                                    <p className = "step3-whom-we-help">Whom you want to help:</p>
                                     <label className = "step3-label">
                                         <input type="checkbox" name="step3Checkbox" value="kids" onChange={this.handleStep3Checkbox}/>
                                     Kids
@@ -295,8 +283,8 @@ class GiveAwayForm  extends Component{
                                     </label>
 
                                     <label className = "footer-form-message-label">
-                                    Enter the name of a specific location (optional)
-                                        <textarea rows = "1" cols = "50" type = "text" name="message"/>    
+                                    Enter the name of a specific location (optional): &nbsp;
+                                        <textarea rows = "1" cols = "50" type = "text"/>    
                                     </label>
                                 </form>
                                 <div className = "steps-buttons">
@@ -307,63 +295,62 @@ class GiveAwayForm  extends Component{
                         </div>
                     </div>
                 </>
-            )
-          
+            ) 
         }
 
         if(counter === 4){
             return(
                 <>
                     <div className = "give-away-form-container">
+                    <p className = "step-counter">Step {counter}/4</p>
                     <div className = "step">
-                        <p>Step {counter}/4</p>
                         <div className = "step4">   
-                            <p>Provide the address and deadline for pickup by deliverymen</p>
+                            <p className = "step4-text">Provide the address and deadline for pickup by deliverymen:</p>
                             <form className = "step4-form" onSubmit={this.handleSubmit} >
                                 <div className = "adress">
-                                    Pickup Address
+                                    <p>Pickup Address:</p>
                                     <label className = "step4-label">
-                                    Street
-                                    {step4StreetError ? <span>{step4StreetError}</span> : ""}
+                                    Street: &nbsp;
+                                    {step4StreetError ? <span className = "step-error">{step4StreetError} </span> : ""}
                                         <input type="text" value = {step4Street} name = "step4Street"
                                         onChange={this.handleStep4} />
                                     </label>
                                     <label className = "step1-label">
-                                    City
-                                    {step4CityError ? <span>{step4CityError}</span> : ""}
+                                    City: &nbsp;
+                                    {step4CityError ? <span className = "step-error">{step4CityError} </span> : ""}
                                         <input type="text" value = {step4City} name = "step4City"
                                         onChange={this.handleStep4}/>
                                     </label>
                                     <label className = "step1-label">
-                                    Post Code
-                                    {step4PostCodeError ? <span>{step4PostCodeError}</span> : ""}
+                                    Post Code: &nbsp;
+                                    {step4PostCodeError ? <span className = "step-error">{step4PostCodeError} </span> : ""}
                                         <input type="text" value = {step4PostCode} name = "step4PostCode"
                                         onChange={this.handleStep4}/>
                                     </label>
                                     <label className = "step1-label">
-                                    Phone number
-                                    {step4PhoneError ? <span>{step4PhoneError}</span> : ""}
+                                    Phone number: &nbsp;
+                                    {step4PhoneError ? <span className = "step-error">{step4PhoneError} </span> : ""}
                                         <input type="number" value = {step4Phone} name = "step4Phone"
                                         onChange={this.handleStep4}/>
                                     </label>
                                 </div>
                                 <div className = "date">
-                                    Date of receipt
+                                    <p>Date of receipt:</p>
                                     <label className = "step1-label">
-                                    Date
-                                    {step4DateError ? <span>{step4DateError}</span> : ""}
+                                    Date: &nbsp;
+                                    {step4DateError ? <span className = "step-error">{step4DateError} </span> : ""}
                                         <input type="text" value = {step4Date} name = "step4Date"
                                         onChange={this.handleStep4}/>
                                     </label>
                                     <label className = "step1-label">
-                                    Time
-                                    {step4TimeError ? <span>{step4TimeError}</span> : ""}
+                                    Time: &nbsp;
+                                    {step4TimeError ? <span className = "step-error">{step4TimeError} </span> : ""}
                                         <input type="text" value = {step4Time} name = "step4Time"
                                         onChange={this.handleStep4}/>
                                     </label>
                                     <label className = "step1-label">
-                                    Notes for deliverymen
-                                        <textarea />
+                                    Notes for deliverymen: &nbsp;
+                                        <textarea value = {notes} name = "notes" onChange={this.handleStep4}/>
                                     </label>
                                 </div>
                             </form>
@@ -374,8 +361,7 @@ class GiveAwayForm  extends Component{
                             </div>
                         </div>
                     </div>
-                </>
-                
+                </>    
             )
         }
 
@@ -406,8 +392,10 @@ class GiveAwayForm  extends Component{
                                         <p>Notes for deliverymen: {notes}</p>
                                     </div>
                                 </div>
-                                <button onClick = {this.handleBack}>BACK</button>
-                                <button onClick = {this.handleConfirm}>Confirm</button>
+                                <div className = "steps-buttons">
+                                    <button onClick = {this.handleBack}>BACK</button>
+                                    <button onClick = {this.handleConfirm}>CONFIRM</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -431,8 +419,7 @@ class GiveAwayForm  extends Component{
 
             )
         }
-    }
-   
+    } 
 }
 
 export default GiveAwayForm;
