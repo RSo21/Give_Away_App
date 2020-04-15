@@ -41,7 +41,7 @@ class GiveAwayForm  extends Component{
             } else {
                 if (step1Value === "") {
                     this.setState({
-                        step1Error: true,
+                        step1Error: "At least one value must be selected",
                     });
                 }
             }
@@ -58,14 +58,14 @@ class GiveAwayForm  extends Component{
                 }
             }
         } else if (counter === 3) {
-            if (step3Checkbox !== 0 && step3City !== "") {
+            if (step3Checkbox.length !== 0 && step3City !== "") {
                 this.setState({
                     counter: counter + 1,
                 });
             } else {
-                if (step3Checkbox === 0 || step3City === "") {
+                if (step3Checkbox.length === 0 || step3City === "") {
                     this.setState({
-                        step3Error: true,
+                        step3Error: "At least one value must be selected",
                     });
                 }
             }
@@ -85,32 +85,32 @@ class GiveAwayForm  extends Component{
         }else {
             if (step4Street.length === 0) {
                 this.setState({
-                    step4StreetError: true,
+                    step4StreetError: "The street must have at least 2 characters",
                 })
             }
             if (step4City.length === 0) {
                 this.setState({
-                    step4CityError: "true",
+                    step4CityError: "The City must have at least 2 characters",
                 })
             }
             if (!postcodeValidation.test(step4PostCode)) {
                 this.setState({
-                    step4PosteCodeError: "true",
+                    step4PostCodeError: "Post Code must be 5 characters",
                 })
             }
             if (!phoneValidation.test(step4Phone)) {
                 this.setState({
-                    step4PhoneError: "true",
+                    step4PhoneError: "the phone number must have 9 numbers",
                 })
             }
             if (step4Date.length < 6) {
                 this.setState({
-                    step4DateError: "true",
+                    step4DateError: true,
                 })
             }
             if (step4Time.length < 3) {
                 this.setState({
-                    step4TimeError: "true",
+                    step4TimeError: true,
                 })
             }
         }
@@ -175,7 +175,6 @@ class GiveAwayForm  extends Component{
         e.preventDefault();
 
         this.setState({
-            counter: this.state.counter + 1,
             step4StreetError: false,
             step4CityError: false,
             step4PostCodeError: false,
@@ -187,7 +186,7 @@ class GiveAwayForm  extends Component{
     }
 
     render(){
-        const {counter, step1Error, step1Value, step2Option, step3City, step3Checkbox, step4Street, step4City, step4PostCode, 
+        const {counter, step1Error, step1Value, step2Option, step3City, step3Checkbox, step3Error, step4Street, step4City, step4PostCode, 
             step4Phone, step4Date, step4Time, step4StreetError, step4CityError, step4PostCodeError, step4PhoneError, step4DateError,
             step4TimeError, notes} = this.state
 
@@ -197,27 +196,27 @@ class GiveAwayForm  extends Component{
                     <div className = "give-away-form-container">
                         <div className = "step">
                             <p>Step {counter}/4</p>
-                            {step1Error ? <p>co najmniej jedna wartość musi być zaznaczona</p> : ""}
+                            {step1Error ? <p>{step1Error}</p> : ""}
                             <form className = "step1" onSubmit={this.handleSubmit}>
                                 Select what you want to add     
                                 <label className = "step1-label">
-                                    <input type="radio" name="name" value={step1Value} onChange={this.handleStep1}/>
+                                    <input type="radio" name="step1Value" value="clothes that can be used again" onChange={this.handleStep1}/>
                                 clothes that can be used again
                                 </label>
                                 <label className = "step1-label">
-                                    <input type="radio" name="name" value={step1Value} onChange={this.handleStep1}/>
+                                    <input type="radio" name="step1Value" value="clothes to throw away" onChange={this.handleStep1}/>
                                 clothes to throw away
                                 </label>
                                 <label className = "step1-label">
-                                    <input type="radio" name="name" value={step1Value} onChange={this.handleStep1}/>
+                                    <input type="radio" name="step1Value" value="toys" onChange={this.handleStep1}/>
                                 toys
                                 </label>
                                 <label className = "step1-label">
-                                    <input type="radio" name="name" value={step1Value} onChange={this.handleStep1}/>
+                                    <input type="radio" name="step1Value" value="books" onChange={this.handleStep1}/>
                                 books
                                 </label>
                                 <label className = "step1-label">
-                                    <input type="radio" name="name" value={step1Value} onChange={this.handleStep1}/>
+                                    <input type="radio" name="step1Value" value="other" onChange={this.handleStep1}/>
                                 other
                                 </label>
                                 <button onClick = {this.handleNext}>NEXT</button>
@@ -260,6 +259,7 @@ class GiveAwayForm  extends Component{
                     <div className = "give-away-form-container">
                         <div className = "step">
                             <p>Step {counter}/4</p>
+                            {step3Error ? <p>{step3Error}</p> : ""}
                             <div className = "step3">   
                                 <form className = "step3-form" onSubmit={this.handleSubmit} >
                                     <label>Lokalization
@@ -274,23 +274,23 @@ class GiveAwayForm  extends Component{
 
                                     Whom you want to help
                                     <label className = "step3-label">
-                                        <input type="checkbox" name="step3Checkbox" value={step3Checkbox} onChange={this.handleStep3Checkbox}/>
+                                        <input type="checkbox" name="step3Checkbox" value="kids" onChange={this.handleStep3Checkbox}/>
                                     Kids
                                     </label>
                                     <label className = "step3-label">
-                                     <input type="checkbox" name="step3Checkbox" value={step3Checkbox} onChange={this.handleStep3Checkbox}/>
+                                     <input type="checkbox" name="step3Checkbox" value="single mothers" onChange={this.handleStep3Checkbox}/>
                                     Single mothers
                                     </label>
                                     <label className = "step3-label">
-                                        <input type="checkbox" name="step3Checkbox" value={step3Checkbox} onChange={this.handleStep3Checkbox}/>
+                                        <input type="checkbox" name="step3Checkbox" value="homeless" onChange={this.handleStep3Checkbox}/>
                                     Homeless
                                     </label>
                                     <label className = "step3-label">
-                                        <input type="checkbox" name="step3Checkbox" value={step3Checkbox} onChange={this.handleStep3Checkbox}/>
+                                        <input type="checkbox" name="step3Checkbox" value="disabled" onChange={this.handleStep3Checkbox}/>
                                     Disabled
                                     </label>
                                     <label className = "step3-label">
-                                        <input type="checkbox" name="step3Checkbox" value={step3Checkbox} onChange={this.handleStep3Checkbox}/>
+                                        <input type="checkbox" name="step3Checkbox" value="elder people" onChange={this.handleStep3Checkbox}/>
                                     Elder people
                                     </label>
 
@@ -324,7 +324,7 @@ class GiveAwayForm  extends Component{
                                     Pickup Address
                                     <label className = "step4-label">
                                     Street
-                                    {step4StreetError ? <span>The street must have at least 2 characters</span> : ""}
+                                    {step4StreetError ? <span>{step4StreetError}</span> : ""}
                                         <input type="text" value = {step4Street} name = "step4Street"
                                         onChange={this.handleStep4} />
                                     </label>
