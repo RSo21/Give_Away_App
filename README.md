@@ -1,13 +1,12 @@
 # Give away app
 
-in progress "form" give away and mobile version
-
+Desktop and mobile version only.
 
 ## General info
 
-The goal of the project is to create a place where everyone can give unnecessary items to trusted institutions.
+The goal of the project is to create a place where everyone can give away unnecessary items to trusted institutions.
 
-The project is a website with a simple form that will help users donate things.
+The project is a website with a simple form that will help users donate items (e.g. clothes, books, toys).
 
 
 ## Idea
@@ -21,9 +20,10 @@ The project is a website with a simple form that will help users donate things.
 Project is created with:
 
 ```
-* HTML5
-* SASS
-* React
+- HTML5
+- SASS
+- React
+- Firebase
 ```
 
 
@@ -49,3 +49,8 @@ To run this project, install it locally using npm:
 ### Demo
 
 Try this working demo: [Give Away App](https://rso21.github.io/Give_Away_App/)
+
+You can register for the application or log in using:
+            login: ```  give@away.com ```,
+            and password: ```giveaway```
+after that you can go to the form give away. 
