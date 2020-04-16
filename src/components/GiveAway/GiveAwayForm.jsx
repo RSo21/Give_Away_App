@@ -95,7 +95,7 @@ class GiveAwayForm  extends Component{
             }
             if (!postcodeValidation.test(step4PostCode)) {
                 this.setState({
-                    step4PostCodeError: "Post Code must be 5 characters",
+                    step4PostCodeError: "Post Code xx-xxx",
                 })
             }
             if (!phoneValidation.test(step4Phone)) {
