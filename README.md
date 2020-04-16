@@ -51,6 +51,8 @@ To run this project, install it locally using npm:
 Try this working demo: [Give Away App](https://rso21.github.io/Give_Away_App/)
 
 You can register for the application or log in using:
+
             login: ```  give@away.com ```,
             and password: ```giveaway```
+            
 after that you can go to the form give away. 
