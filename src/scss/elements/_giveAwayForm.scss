@@ -10,13 +10,14 @@
 
     @include mobile{
         height: 100vh;
+        height: 100vh;
         background-image: none;
         background-color: $bg-color-secondary;
     }
 
     .step-counter{
         font-size: 1.5em;
-        padding: 3.5em 0 1.7em 4em;
+        padding: 3.5em 0 1em 4em;
     }
 
     .step{
@@ -24,7 +25,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3em 0 1em 3em;
+        padding: 2em 0 1em 3em;
 
         .step-error{
             color: red;
@@ -37,7 +38,7 @@
 
         .step1-btn{
             margin-top: 2em;
-            width: 15vh;
+            padding: 1em 2em;
         }
 
 
