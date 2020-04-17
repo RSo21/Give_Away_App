@@ -6,7 +6,6 @@ import { slide as Menu } from "react-burger-menu";
 
 
 class LogElements  extends Component {
-
     state = {
         width: window.innerWidth,
     };
@@ -87,7 +86,6 @@ class LogElements  extends Component {
             )
 
     } else{
-
             return(
                 <div className = "log-elements">
                     <span>Hello {sessionStorage.getItem("email")}</span>
