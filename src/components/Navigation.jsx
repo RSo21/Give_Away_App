@@ -24,13 +24,6 @@ class Navigation extends Component {
         this.setState({ width: window.innerWidth });
     };
 
-
-    handleClick() {
-        this.setState({
-            open: !this.state.open
-        });
-    }
-
     endSession = () => {
         sessionStorage.clear();
     };
@@ -43,7 +36,7 @@ class Navigation extends Component {
         if(isMobile && sessionStorage.getItem("email") == null){
             return(
                 <header className = "page-header-mobile">
-                    <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon" menuClicked={this.handleClick}/> 
+                    <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon"/> 
                      </div>
                     <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
                     <p activeclass="active" spy="true" offset={50} duration={500}>
@@ -74,7 +67,8 @@ class Navigation extends Component {
             }else if (isMobile){
                 return(
                     <header className = "page-header-mobile">
-                        <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon" menuClicked={this.handleClick}/> 
+                        <span className = "hello-mobile">Hello {sessionStorage.getItem("email")}</span>
+                        <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon"/> 
                         </div>
                         <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
                             <p activeclass="active" spy="true" offset={50} duration={500}>

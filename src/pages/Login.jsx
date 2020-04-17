@@ -15,6 +15,7 @@ class LoginForm extends Component{
         error: "",
         loginSuccess: "",
         loginError: "",
+        success: false
     }
 
     handleChange = e => {
@@ -24,7 +25,7 @@ class LoginForm extends Component{
       };
 
       handleSubmit = e => {
-        e.preventDefault();
+       e.preventDefault();
 
         const emailValidation = /^(([^<>()[\]\\.,;:\s@\\"]+(\.[^<>()[\]\\.,;:\s@\\"]+)*)|(\\".+\\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
         
@@ -42,7 +43,8 @@ class LoginForm extends Component{
               email: "",
               password: "",
               loginSuccess: "Logged in successfully",
-              user: authUser.user
+              user: authUser.user,
+              success: true
              });
 
               sessionStorage.setItem("email", `${authUser.user.email}`);
@@ -82,8 +84,11 @@ class LoginForm extends Component{
             emailError,
             passwordError,
             loginSuccess,
-            loginError
+            loginError,
+            success
           } = this.state;
+
+        if(success === false){
 
         return(
             <>
@@ -124,8 +129,28 @@ class LoginForm extends Component{
                 </div>
             </>
         );
-    }
+    
+      }else{
+
+          return(
+              <>
+                <LogElements/>
+                <NavigationLoginAndRegister />
+                <div className = "login">
+                  <div className = "login-text">
+                    <p>Hello</p>
+                    <img className = "decoration" src = {Decoration} alt = "decoration"/>
+                    {loginSuccess ? <p className='login-success-user'>{loginSuccess}</p> : ""}
+                    <button className = "login-btn-give-away"><Link to="/giveaway">Give Away</Link></button>
+                  </div>
+                </div>
+              </>
+            );
+          }
+        }
 }
+
+
 const Login =withRouter(withFirebase(LoginForm));
 
 export default withFirebase(Login);
