@@ -5,6 +5,7 @@ import Decoration from "../assets/Decoration.svg"
 import NavigationLoginAndRegister from '../components/NavigationLoginAndRegister';
 import {withFirebase} from '../components/firebase/context';
 import {withRouter} from "react-router-dom"
+import GiveAway from "./GiveAway";
 
 class LoginForm extends Component{
     state = {
@@ -134,7 +135,7 @@ class LoginForm extends Component{
 
           return(
               <>
-                <LogElements/>
+                {/* <LogElements/>
                 <NavigationLoginAndRegister />
                 <div className = "login">
                   <div className = "login-text">
@@ -143,7 +144,8 @@ class LoginForm extends Component{
                     {loginSuccess ? <p className='login-success-user'>{loginSuccess}</p> : ""}
                     <button className = "login-btn-give-away"><Link to="/giveaway">Give Away</Link></button>
                   </div>
-                </div>
+                </div> */}
+                <GiveAway />
               </>
             );
           }
