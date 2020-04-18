@@ -82,9 +82,9 @@ class HomeWhomWeHelp extends Component {
         console.log(organizationsItems);
 
         return(
-            <div className = "whom-we-helps">
+            <div className = "whom-we-helps" id = "help">
                 <div className = "whom-we-helps-text">
-                    <p id = "help">Whom we helps?</p>
+                    <p className = "help">Whom we helps?</p>
                     <img className = "decoration" src = {Decoration} alt = "decoration"/> 
                 </div>
                 <div className = "whom-we-help-btn">

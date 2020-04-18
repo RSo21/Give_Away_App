@@ -164,8 +164,7 @@
                     border: 0.08em solid $font-color-secondary;  
                 }
             }
-        }
-        
+        }   
     }
 
     .footer-bottom{
@@ -177,6 +176,10 @@
         align-self: flex-end;
         z-index: 2;
         position: relative;
+
+        @include mobile{
+            bottom: -7vh;
+        }
 
         span{
             margin-left: 40vw;
@@ -203,8 +206,5 @@
                 }
             }
         }
-
-        
-
     } 
 }
