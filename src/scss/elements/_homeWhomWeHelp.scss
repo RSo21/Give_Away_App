@@ -118,13 +118,10 @@
 
             @include mobile{
                 padding: 0.5em;
-            }
-
-            
+            }  
         }
         .active{
             border: 0.02em solid black;
         }
-    }
-    
+    }  
 }

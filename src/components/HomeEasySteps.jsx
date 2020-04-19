@@ -8,11 +8,8 @@ const EasySteps  = () => {
         <div className = "easy-steps" id = "howWork">
             <p>Only 4 easy steps</p>
             <img className = "decoration" src = {Decoration} alt = "decoration"/>  
-        </div>
-        
+        </div>  
     )
-
-
 }
 
 export default EasySteps;

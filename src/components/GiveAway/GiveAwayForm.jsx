@@ -416,7 +416,6 @@ class GiveAwayForm  extends Component{
                         </div>
                     </div>
                 </>
-
             )
         }
     } 

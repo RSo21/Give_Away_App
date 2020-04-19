@@ -2,8 +2,6 @@ import React from "react";
 import Decoration from "../assets/Decoration.svg";
 import Signature from "../assets/Signature.svg";
 
-
-
 const AboutUs  = () => {
 
     return(
@@ -17,8 +15,6 @@ const AboutUs  = () => {
             <div className = "about-us-photo"></div>
         </div>
     )
-
-
 }
 
 export default AboutUs;

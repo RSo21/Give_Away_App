@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 import LogElements from "./LogElements";
 import Navigation from "./Navigation";
-// import HeaderPhoto from "../assets/Home-Hero-Image.jpg";
 import Decoration from "../assets/Decoration.svg"
 
 
@@ -11,7 +10,6 @@ const HomeHeader  = () => {
     return(
         <header className = "header-container">
             <div className = "header-photo">
-                {/* <img src = {HeaderPhoto} alt = "headerPhoto" /> */}
             </div>
             <div className = "header-content">
                 <LogElements />

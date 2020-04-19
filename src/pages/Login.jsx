@@ -132,17 +132,16 @@ class LoginForm extends Component{
         );
     
       }else{
-
-          return(
-              <>
-                <GiveAway />
-              </>
-            );
-          }
-        }
+        return(
+          <>
+            <GiveAway />
+          </>
+        );
+      }
+    }
 }
 
 
-const Login =withRouter(withFirebase(LoginForm));
+const Login = withRouter(withFirebase(LoginForm));
 
 export default withFirebase(Login);
