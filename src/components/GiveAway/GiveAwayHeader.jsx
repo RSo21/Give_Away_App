@@ -1,6 +1,6 @@
 import React from "react";
-import LogElements from "../LogElements";
-import NavigationLoginAndRegister from "../NavigationLoginAndRegister";
+import LogElementsGiveAway from "../LogElementsGiveAway";
+import NavigationGiveAway from "../NavigationGiveAway";
 import Decoration from "./../../assets/Decoration.svg"
 
 
@@ -9,12 +9,12 @@ const GiveAwayHeader  = () => {
 
     return(
         <>
-        <header className = "give-away-container">
+        <header className = "give-away-container" id="giveAway">
             <div className = "give-away-photo">
             </div>
             <div className = "give-away-content">
-                <LogElements />
-                <NavigationLoginAndRegister />
+                <LogElementsGiveAway />
+                <NavigationGiveAway />
                 <div className = "give-away-content-text">
                     <h1>Give away items</h1>
                     <p>if you don't need them</p>

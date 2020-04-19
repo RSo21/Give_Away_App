@@ -180,7 +180,7 @@ class GiveAwayForm  extends Component{
         if(counter === 1){
             return(
                 <>
-                    <div className = "give-away-form-container">
+                    <div className = "give-away-form-container" id = "form">
                         <p className = "step-counter">Step {counter}/4</p>
                         <div className = "step"> 
                             {step1Error ? <p className = "step-error">{step1Error}</p> : ""}
