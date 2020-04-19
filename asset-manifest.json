@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Give_Away_App/static/css/main.324ba939.chunk.css",
-    "main.js": "/Give_Away_App/static/js/main.d62b872e.chunk.js",
-    "main.js.map": "/Give_Away_App/static/js/main.d62b872e.chunk.js.map",
+    "main.css": "/Give_Away_App/static/css/main.7592f372.chunk.css",
+    "main.js": "/Give_Away_App/static/js/main.382bf305.chunk.js",
+    "main.js.map": "/Give_Away_App/static/js/main.382bf305.chunk.js.map",
     "runtime-main.js": "/Give_Away_App/static/js/runtime-main.0cb404b6.js",
     "runtime-main.js.map": "/Give_Away_App/static/js/runtime-main.0cb404b6.js.map",
     "static/js/2.5507fbef.chunk.js": "/Give_Away_App/static/js/2.5507fbef.chunk.js",
     "static/js/2.5507fbef.chunk.js.map": "/Give_Away_App/static/js/2.5507fbef.chunk.js.map",
     "index.html": "/Give_Away_App/index.html",
-    "precache-manifest.ec5e5914f16fe06fedcde1cb55d7bf2d.js": "/Give_Away_App/precache-manifest.ec5e5914f16fe06fedcde1cb55d7bf2d.js",
+    "precache-manifest.73ccc5f334358c9e42c5a1068da90cb1.js": "/Give_Away_App/precache-manifest.73ccc5f334358c9e42c5a1068da90cb1.js",
     "service-worker.js": "/Give_Away_App/service-worker.js",
-    "static/css/main.324ba939.chunk.css.map": "/Give_Away_App/static/css/main.324ba939.chunk.css.map",
+    "static/css/main.7592f372.chunk.css.map": "/Give_Away_App/static/css/main.7592f372.chunk.css.map",
     "static/js/2.5507fbef.chunk.js.LICENSE.txt": "/Give_Away_App/static/js/2.5507fbef.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/Give_Away_App/static/media/Home-Hero-Image.8f9e377d.jpg",
     "static/media/Decoration.svg": "/Give_Away_App/static/media/Decoration.2290784e.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.0cb404b6.js",
     "static/js/2.5507fbef.chunk.js",
-    "static/css/main.324ba939.chunk.css",
-    "static/js/main.d62b872e.chunk.js"
+    "static/css/main.7592f372.chunk.css",
+    "static/js/main.382bf305.chunk.js"
   ]
 }
