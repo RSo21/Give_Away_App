@@ -24,6 +24,10 @@ class NavigationGiveAway extends Component {
         this.setState({ width: window.innerWidth });
     };
 
+    endSession = () => {
+        sessionStorage.clear();
+    };
+
     render(){
 
         const { width } = this.state;

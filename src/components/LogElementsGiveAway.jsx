@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
-import MenuIcon from "../assets/menu.png";
-
-import { slide as Menu } from "react-burger-menu";
-
 
 class LogElementsGiveAway  extends Component {
     state = {
@@ -34,21 +30,7 @@ class LogElementsGiveAway  extends Component {
         if (isMobile){
             return(
                 <header className = "page-header-mobile">
-                    <span className = "hello-mobile">Hello {sessionStorage.getItem("email")}</span>
-                    <div><img className = "icon-menu" src = {MenuIcon} alt = "menuIcon"/> 
-                    </div>
-                    <Menu className = "menu-mobile" pageWrapId={"page-wrap"} isOpen={true} width={ 200 }>
-                        <p activeclass="active" spy="true" offset={50} duration={500}>
-                            <Link to="/Give_Away_App">Start</Link>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <Link to="/giveaway">Give Away</Link>
-                        </p>
-                        <p activeclass="active" to="start" spy="true" offset={50} duration={500}>
-                            <Link to="/logout" onClick={this.endSession}>Log Out</Link>
-                        </p>
-                    </Menu>
-            </header>
+                </header>
             )
 
     } else{
@@ -62,6 +44,5 @@ class LogElementsGiveAway  extends Component {
         }
     }
 }
-
 
 export default LogElementsGiveAway;
