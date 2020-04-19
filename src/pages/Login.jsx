@@ -135,16 +135,6 @@ class LoginForm extends Component{
 
           return(
               <>
-                {/* <LogElements/>
-                <NavigationLoginAndRegister />
-                <div className = "login">
-                  <div className = "login-text">
-                    <p>Hello</p>
-                    <img className = "decoration" src = {Decoration} alt = "decoration"/>
-                    {loginSuccess ? <p className='login-success-user'>{loginSuccess}</p> : ""}
-                    <button className = "login-btn-give-away"><Link to="/giveaway">Give Away</Link></button>
-                  </div>
-                </div> */}
                 <GiveAway />
               </>
             );
