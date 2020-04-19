@@ -46,7 +46,7 @@ To run this project, install it locally using npm:
 * ```npm start``` and ```http://localhost:3000/Give_Away_App``` in the browser to preview the app 
 
 
-### Demo
+## Demo
 
 Try this working demo: [Give Away App](https://rso21.github.io/Give_Away_App/)
 
