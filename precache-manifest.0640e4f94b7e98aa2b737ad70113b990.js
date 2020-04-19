@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "358f5e110a875a467420e018378c2e25",
+    "revision": "aef43099c6b6a4d094f63c2ce0694a4b",
     "url": "/Give_Away_App/index.html"
   },
   {
-    "revision": "2164267fbade68d22708",
-    "url": "/Give_Away_App/static/css/main.7592f372.chunk.css"
+    "revision": "748803bfb9b42b6bf376",
+    "url": "/Give_Away_App/static/css/main.5263b9ba.chunk.css"
   },
   {
     "revision": "e90ab4814326e876dc76",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Give_Away_App/static/js/2.5507fbef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2164267fbade68d22708",
+    "revision": "748803bfb9b42b6bf376",
     "url": "/Give_Away_App/static/js/main.382bf305.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Give_Away_App/static/css/main.7592f372.chunk.css",
+    "main.css": "/Give_Away_App/static/css/main.5263b9ba.chunk.css",
     "main.js": "/Give_Away_App/static/js/main.382bf305.chunk.js",
     "main.js.map": "/Give_Away_App/static/js/main.382bf305.chunk.js.map",
     "runtime-main.js": "/Give_Away_App/static/js/runtime-main.0cb404b6.js",
@@ -8,9 +8,9 @@
     "static/js/2.5507fbef.chunk.js": "/Give_Away_App/static/js/2.5507fbef.chunk.js",
     "static/js/2.5507fbef.chunk.js.map": "/Give_Away_App/static/js/2.5507fbef.chunk.js.map",
     "index.html": "/Give_Away_App/index.html",
-    "precache-manifest.73ccc5f334358c9e42c5a1068da90cb1.js": "/Give_Away_App/precache-manifest.73ccc5f334358c9e42c5a1068da90cb1.js",
+    "precache-manifest.0640e4f94b7e98aa2b737ad70113b990.js": "/Give_Away_App/precache-manifest.0640e4f94b7e98aa2b737ad70113b990.js",
     "service-worker.js": "/Give_Away_App/service-worker.js",
-    "static/css/main.7592f372.chunk.css.map": "/Give_Away_App/static/css/main.7592f372.chunk.css.map",
+    "static/css/main.5263b9ba.chunk.css.map": "/Give_Away_App/static/css/main.5263b9ba.chunk.css.map",
     "static/js/2.5507fbef.chunk.js.LICENSE.txt": "/Give_Away_App/static/js/2.5507fbef.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/Give_Away_App/static/media/Home-Hero-Image.8f9e377d.jpg",
     "static/media/Decoration.svg": "/Give_Away_App/static/media/Decoration.2290784e.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.0cb404b6.js",
     "static/js/2.5507fbef.chunk.js",
-    "static/css/main.7592f372.chunk.css",
+    "static/css/main.5263b9ba.chunk.css",
     "static/js/main.382bf305.chunk.js"
   ]
 }
